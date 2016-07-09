@@ -6,102 +6,113 @@
     
     <TextView
         android:id="@+id/tv_setreturn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
         android:layout_marginRight="123dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/back" />
+        android:background="@drawable/back"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+         />
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/tv_setreturn"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="78dp"
+
         android:background="@drawable/model"
         android:gravity="center"
         android:text="模式1"
-        android:textColor="#000000"
+        android:textColor="#ffffff"
         android:textSize="30sp" />
 
     <TextView
         android:id="@+id/TextView02"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/TextView01"
-        android:layout_below="@+id/TextView01"
-        android:layout_marginTop="35dp"
         android:background="@drawable/model"
         android:gravity="center"
         android:text="模式3"
-        android:textColor="#000000"
-        android:textSize="30sp" />
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_marginStart="80dp"
+        android:layout_toEndOf="@+id/TextView01"
+        android:layout_alignTop="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+         />
 
     <TextView
         android:id="@+id/TextView01"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="24dp"
         android:background="@drawable/model"
         android:gravity="center"
         android:text="模式2"
-        android:textColor="#000000"
-        android:textSize="30sp" />
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_below="@+id/sp_mode1"
+        android:layout_toEndOf="@+id/textView1"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginStart="80dp"/>
 
  <Spinner
      android:id="@+id/sp_mode1"
-     android:layout_width="300sp"
-     android:layout_height="80sp"
-     android:layout_alignTop="@+id/textView1"
-     android:layout_marginRight="170dp"
-     android:layout_toLeftOf="@+id/tv_setreturn"
-     android:background="@drawable/spinner" />
+     android:layout_width="140dp"
+     android:layout_height="50dp"
+     android:layout_marginStart="30dp"
+     android:layout_marginBottom="20dp"
+     android:background="@drawable/spinner"
+     android:layout_above="@+id/textView1"
+     android:layout_alignStart="@+id/textView1" />
 
  <Spinner
      android:id="@+id/sp_mode2"
-     android:layout_width="300sp"
+     android:layout_width="140dp"
      android:layout_height="80sp"
-     android:layout_alignLeft="@+id/sp_mode1"
-     android:layout_alignTop="@+id/TextView01"
-     android:background="@drawable/spinner" />
+     android:background="@drawable/spinner"
+     android:layout_above="@+id/TextView01"
+     android:layout_alignStart="@+id/TextView01"
+     android:layout_alignTop="@+id/sp_mode1"
+     android:layout_alignBottom="@+id/sp_mode1"
+     android:layout_marginStart="30dp"
+     />
 
  <Spinner
      android:id="@+id/sp_mode3"
-     android:layout_width="300sp"
-     android:layout_height="80sp"
-     android:layout_alignLeft="@+id/sp_mode2"
-     android:layout_alignTop="@+id/TextView02"
+     android:layout_width="140dp"
+     android:layout_height="wrap_content"
+     android:layout_alignStart="@+id/TextView02"
+     android:layout_above="@+id/TextView02"
+     android:layout_marginStart="30dp"
+     android:layout_alignTop="@+id/sp_mode2"
+     android:layout_alignBottom="@+id/sp_mode2"
      android:background="@drawable/spinner" />
 
  <TextView
      android:id="@+id/textView3"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
-     android:layout_above="@+id/textView1"
-     android:layout_alignLeft="@+id/textView1"
+    android:layout_marginStart="50dp"
+     android:layout_marginTop="10dp"
      android:text="设置"
      android:textColor="#ffffff"
      android:textSize="50sp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
         android:text="@string/confirm"
         android:id="@+id/tv_Confirm"
-        android:layout_alignBottom="@+id/sp_mode2"
-        android:layout_alignTop="@+id/sp_mode2"
-        android:layout_alignStart="@+id/tv_setreturn"
-        android:layout_alignEnd="@+id/tv_setreturn"
-        android:textColor="#ff02010a"
+        android:textColor="#ffffff"
         android:visibility="visible"
         android:textSize="30sp"
         android:background="@drawable/model"
-        android:gravity="center_vertical|center_horizontal" />
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="50dp"/>
 
 </RelativeLayout>
